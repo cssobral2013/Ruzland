@@ -2,19 +2,6 @@ from fontTools.ttLib import TTFont
 
 '''Generate WOFF from TTF or OTF font.'''
 
-srcPath  = './ttf/Ruzland-Thin.ttf'
-woffPath = './web/Ruzland-Thin.woff'
-
-with TTFont(srcPath) as font:
-    font.flavor = 'woff'
-    font.save(woffPath)
-
-srcPath  = './ttf/Ruzland-ThinItalic.ttf'
-woffPath = './web/Ruzland-ThinItalic.woff'
-
-with TTFont(srcPath) as font:
-    font.flavor = 'woff'
-    font.save(woffPath)
 
 srcPath  = './ttf/Ruzland-ExtraLight.ttf'
 woffPath = './web/Ruzland-ExtraLight.woff'
@@ -167,20 +154,6 @@ with TTFont(srcPath) as font:
 
 '''Generate WOFF2 from TTF or OTF font.'''
 
-srcPath  = './ttf/Ruzland-Thin.ttf'
-woff2Path = './web/Ruzland-Thin.woff2'
-
-with TTFont(srcPath) as font:
-    font.flavor = 'woff2'
-    font.save(woff2Path)
-
-srcPath  = './ttf/Ruzland-ThinItalic.ttf'
-woff2Path = './web/Ruzland-ThinItalic.woff2'
-
-with TTFont(srcPath) as font:
-    font.flavor = 'woff2'
-    font.save(woff2Path)
-    
 
 srcPath  = './ttf/Ruzland-ExtraLight.ttf'
 woff2Path = './web/Ruzland-ExtraLight.woff2'
